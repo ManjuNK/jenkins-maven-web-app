@@ -1,6 +1,6 @@
 node{
     stage('clone repo'){
-        git 'https://github.com/ManjuNK/jenkins-maven-web-app.git'
+        git branch: 'main', url: 'https://github.com/ManjuNK/jenkins-maven-web-app'
     }
     
     stage('maven clean build'){
