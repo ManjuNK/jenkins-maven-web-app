@@ -16,7 +16,7 @@ node{
         
     }
     stage('Upload Artifcate'){
-nexusArtifactUploader artifacts: [[artifactId: '01-maven-web-app', classifier: '', file: 'target/01-maven-web-app.war', type: 'war']], credentialsId: 'Nexus-Credentails', groupId: 'in.ashokit', nexusUrl: '3.64.237.2:8081/', nexusVersion: 'nexus3', protocol: 'http', repository: 'manju-snapshot-repository', version: '1.0-SNAPSHOT'    
+nexusArtifactUploader artifacts: [[artifactId: '02-maven-web-app', classifier: '', file: 'target/01-maven-web-app.war', type: 'war']], credentialsId: 'Nexus-Credentails', groupId: 'in.manju', nexusUrl: '3.64.237.2:8081/', nexusVersion: 'nexus3', protocol: 'http', repository: 'manju-snapshot-repository', version: '1.0-SNAPSHOT'    
         
     }
     stage('Deploy'){
